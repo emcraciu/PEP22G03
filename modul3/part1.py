@@ -33,10 +33,51 @@
 # print(a or b)
 
 
-# condition
-a = ""
-b = "b"
+# # condition
+# a = ""
+# b = "b"
+#
+# print(a and b)
+# print(bool(a and b))
+# print(bool(a))
 
-print(a and b)
-print(bool(a and b))
-print(bool(a))
+#
+# print(2000 - True)
+# print(True > 2000)
+# print(dir(True))
+
+
+# while loop
+
+# depends_on = 1
+#
+# while depends_on <= 4:
+#     depends_on += 1
+#     print('Running')
+#     if depends_on == 4:
+#         break
+#
+#
+# print('Done')
+
+
+# n = 0
+# while n < 10:
+#     if n == 7:
+#         n += 1
+#         continue
+#     print(n)
+#     n += 1
+#
+# print('Done')
+
+
+n = 0
+while n < 6:
+    if n == 7:
+        n += 1
+        break
+    print(n)
+    n += 1
+else:
+    print('Done')
