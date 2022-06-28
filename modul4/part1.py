@@ -63,16 +63,29 @@
 
 
 # Nested functions
-arg1 = 2
-def level1(arg1):
-    print('inainte de modificare', arg1)
-    def level2(arg2):
-        nonlocal arg1
-        arg1 = 10
-        print(arg2 + arg1)
-    level2(3)
-    print('dupa modificare', arg1)
+# arg1 = 2
+# def level1(arg1):
+#     print('inainte de modificare', arg1)
+#     def level2(arg2):
+#         nonlocal arg1
+#         arg1 = 10
+#         print(arg2 + arg1)
+#     level2(3)
+#     print('dupa modificare', arg1)
+#
+# level1(1)
+# print('variabila globala', arg1)
 
-level1(1)
-print('variabila globala', arg1)
+# call method
+
+def test():
+    print('Dummy')
+
+
+
+test()
+test.__call__.__call__.__call__.__call__()
+
+# test.abcd = 3
+# print(dir(test))
 
