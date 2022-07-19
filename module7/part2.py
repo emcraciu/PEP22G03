@@ -9,7 +9,7 @@ class Shop:
     def __init__(self, products):
         self.products = products
 
-    def add_product(self, name, quantity):
+    def add_product(self, name, quantity):  # <- fix add
         self.products[name] = quantity
 
     def remove_product(self, name):
