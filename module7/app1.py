@@ -3,7 +3,7 @@ class Product:
     def __init__(self):
         self.cathegory = input("Introduceti numele categoriei")
         self.name = input("Introduceti numele produsului")
-        self.cathegory = input("Introduceti pretul produsului")
+        self.price = input("Introduceti pretul produsului")
         self.stock = input("Introduceti stocul produsului")
 
     def __repr__(self):
