@@ -31,13 +31,15 @@ print('Value str after change', my_class2.my_string)
 
 print(80 * '#')
 
+
 class My_Class1:
 
     def __init__(self):
         self.my_new_list = []
 
+
 my_class1 = My_Class1()
-#print(id(My_Class1.my_new_list))
+# print(id(My_Class1.my_new_list))
 print('Initial value', my_class1.my_new_list)
 print('My list inst 1 ID1', id(my_class1.my_new_list))
 my_class1.my_new_list.append(1)
@@ -45,11 +47,24 @@ print('My list inst 1 ID2', id(my_class1.my_new_list))
 print('Value after change', my_class1.my_new_list)
 
 my_class2 = My_Class1()
-#print(id(My_Class1.my_new_list))
+# print(id(My_Class1.my_new_list))
 print('Initial value', my_class2.my_new_list)
 print('My list inst 1 ID1', id(my_class2.my_new_list))
 my_class2.my_new_list.append(1)
 print('My list inst 1 ID2', id(my_class2.my_new_list))
 print('Value after change', my_class2.my_new_list)
 
+print(80 * '#')
 
+
+class My_Class2:
+    my_list1 = []
+
+
+first = My_Class2()
+print(dir(first))
+
+My_Class2.my_list2 = []  # <- classes can be modified dinamically
+
+second = My_Class2()
+print(dir(second))
