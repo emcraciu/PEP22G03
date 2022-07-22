@@ -97,7 +97,7 @@ while True:
                 print(product)
         elif submeniu1 == '4':
             setattr(Categori, input('Category name'), [])
-            # Categori(lista_produse[0]).__setattr__(input('Category name'), [])
+            # Categori(lista_produse[0]).__setattr__(input('Category name'), []) # https://github.com/python/cpython/issues/84141
 
 
     elif meniu == '2':
