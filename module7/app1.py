@@ -96,8 +96,8 @@ while True:
             for product in Categori.incaltaminte:
                 print(product)
         elif submeniu1 == '4':
-            # setattr(Categori(lista_produse[0]), input('Category name'), [] )
-            Categori(lista_produse[0]).__setattr__(input('Category name'), [])
+            setattr(Categori, input('Category name'), [])
+            # Categori(lista_produse[0]).__setattr__(input('Category name'), [])
 
 
     elif meniu == '2':
