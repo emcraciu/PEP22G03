@@ -92,10 +92,15 @@ class A():
         print('abc')
 
 class B(A):
-    def abc(self):
-        print('bac')
+    pass
+    # def abc(self):
+    #     print('bac')
 
-class C(B, A):
+class C(A):
+    def abc(self):
+        print('cab')
+
+class D(B, C, A):
     pass
 
 a = A()
@@ -106,3 +111,6 @@ b.abc()
 
 c = C()
 c.abc()
+
+d = D()
+d.abc()
