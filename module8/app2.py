@@ -35,6 +35,7 @@ import datetime
 
 
 class Kronos:
+    """something"""
 
     employees = {}
 
@@ -45,6 +46,7 @@ class Kronos:
         return KronosIterator(self.employees)
 
     def add_start_time(self, name, start_time):
+        """something"""
         hours, minutes, seconds = start_time.split(":")
         self.employees[name] = [datetime.datetime(
             year=self.day.year, month=self.day.month, day=self.day.day,
