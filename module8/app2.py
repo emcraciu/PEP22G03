@@ -60,6 +60,12 @@ class Kronos:
             hour=int(hours), minute=int(minutes), second=int(seconds)
         ))
 
+    def write_to_file(self):
+        with open('my_file.out', "w") as file:
+            for employee in self:
+                file.write(str(employee))
+
+
 
 class KronosIterator():
     working_hours = []
@@ -81,6 +87,4 @@ class KronosIterator():
 k = Kronos(time.time())
 k.add_start_time('Joe', "09:01:20")
 k.add_end_time('Joe', "09:01:30")
-
-for emp in k:
-    print(emp)
+k.write_to_file()
