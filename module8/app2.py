@@ -62,7 +62,6 @@ class Kronos:
 
 
 class KronosIterator():
-
     working_hours = []
 
     def __init__(self, employees: dict):
@@ -77,10 +76,6 @@ class KronosIterator():
         if not self.working_hours:
             raise StopIteration
         return self.working_hours.pop()
-
-
-
-
 
 
 k = Kronos(time.time())
